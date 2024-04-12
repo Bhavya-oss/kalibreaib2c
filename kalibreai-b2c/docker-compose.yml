@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  nextjs-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my-next-app
+    container_name: Kalibre-B2C
+    ports:
+      - "8081:8081"
